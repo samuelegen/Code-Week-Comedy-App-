@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Comedy App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="elementBtn">
+				<div class="btnpannello">
+					<div class="containerMovie">
+					<ul id="movieList">
+					<li class="movieItem"><span class="starIcon">⭐</span></li>
+					</ul>	
+					</div>
+				<ion-icon id="categoryBtn" class="categoryIcon" name="copy"></ion-icon>	
+				</div>
+				<div class="panel">
+					<p class="commediaIT">Commedia Italiana</p>
+				</div>
+			</div>
+			<div class="navbarTitle">
+				<h1 class="title">Comedy Film</h1>
+			</div>
+			<div class="containerIcon">
+				<ion-icon class="searchIcon" name="search"></ion-icon>
+				<ion-icon class="userIcon" name="person-circle"></ion-icon>
+			</div>
+		</nav>
+		
+		<section>
+			<div class="searchInput">
+				<input class="inputSearch" type="text" placeholder="Cerca una Commedia">
+			</div>
+		</section>
+
+		<div class="container">
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="closeBtn">
+						<button>X</button>
+					</div>
+					<p class="textModal">Accedi o Registrati</p>
+					<form class="signIn">
+						<input class="inputUser" type="text" placeholder="Username" />
+						<input class="inputPassUser" type="password" placeholder="Password" />
+					</form>
+					<form class="logIn">
+						<input class="inputUserLog" type="text" placeholder="Username" />
+						<input class="inputPassUserLog" type="password" placeholder="Password" />
+					</form>
+					<div class="buttonLog">
+						<button class="signAccess">Registrati</button>
+						<button class="log">Accedi</button>
+						<button class="sign">Registrati</button>
+						<button class="logAccess">Accedi</button>
+					</div>
+				</div>
+			</div>
+			<!-- Buttons change pages -->
+		</div>
+		<div class="containerBtnPage">
+			<span id="currentPage"></span>
+		</div>
+		<script type="module" src="./index.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
